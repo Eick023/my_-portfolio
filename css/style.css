@@ -6,24 +6,50 @@
 
 /* 1page */
 #portfolio {
+  position: relative;
   width: 1920px; height: 950px;
   background-color: rgba(245, 245, 220, 1);
+
 }
-#portfolio .web {
-  float: left;
+.web {
   width: 450px; height: 840px;
   margin: 0 150px; padding-top: 50px; 
   /* outline: 1px dotted red; */
+
 }
+.logo{
+  font-size: medium;
+  position: relative;
+  overflow: hidden;
+  animation: logo 5s ease-in-out;
+
+
+}
+
+
+@keyframes logo{
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+
+}
+
 #portfolio .web .logo h1 {
   /* font-family: "Andika", sans-serif; */
   font-weight: 100;
   font-size: 80px;
+
 }
 #portfolio .web .logo .name {
   font-family: "Andika", sans-serif;
   margin: 30px 0 500px 0;
   font-size: 20px;
+
   /* outline: 1px dotted red; */
 }
 #portfolio .web .logo .contact-main {
@@ -35,10 +61,23 @@
   font-family: "Actor", sans-serif;
   font-size: 30px;
 }
-#portfolio .sub-logo {
-  float: left;
-  margin: 200px 0 0 200px;
+.sub-logo {
+  position: absolute; left: 800px; top: 100px;
+  animation-duration: 3s;
+  animation-name: slidein;
   /* outline: 1px dotted red; */
+}
+.runner {filter: drop-shadow(3px 3px 5px #000) }
+@keyframes slidein {
+  from {
+    position: absolute; left: -1000px;
+    margin-left: 0%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 /* 2page */
@@ -65,7 +104,7 @@
   padding-top: 65px;
   /* outline: 1px dotted red; */
 }
-#About_Me .inner .About_box h2 span {
+#About_Me .inner .About_box h2 color {
   color: rgba(234, 34, 34, 1);
 }
 
@@ -82,7 +121,7 @@
   color: #8E8A8A; font-size: 20px;
   margin-top: 10px;
 }
-#About_Me .inner .About_box .img_box .my_name span {
+#About_Me .inner .About_box .img_box .my_name myname {
   font-weight: bold; font-size: 30px;
   color: #000;
 }
@@ -203,9 +242,6 @@
   font-size: 32px;
   font-weight: bold;
   padding-bottom: 20px;
-}
-#About_Me .inner .About_box3 .Skill ul {
-
 }
 #About_Me .inner .About_box3 .Skill ul li {
   position: relative;
