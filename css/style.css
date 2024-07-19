@@ -7,8 +7,10 @@
 /* 1page */
 #portfolio {
   position: relative;
+  float: left;
   width: 1920px; height: 950px;
   background-color: rgba(245, 245, 220, 1);
+  outline: 1px dotted red;
 
 }
 .web {
@@ -22,8 +24,6 @@
   position: relative;
   overflow: hidden;
   animation: logo 5s ease-in-out;
-
-
 }
 
 
@@ -80,23 +80,37 @@
   }
 }
 
+.icon {
+  width: 40px; height: 40px;
+  background-color: #000;
+  color: #fff;
+  text-align: center; line-height: 40px;
+  border-radius: 50%;
+  position: absolute; left: 1700px; bottom: 100px;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 1s;
+}
+.icon:hover {
+  transform: scale(1.5);
+}
+
 /* 2page */
 #About_Me {
+  float: left;
   width: 1920px; height: 950px;
   background-color: rgba(245, 245, 220, 1);
 }
 #About_Me .inner {
-  width: 1700px;
   margin: 0 auto;
-  /* outline: 1px dotted red; */
+  outline: 1px dotted red;
 }
 
 /* About_box */
 #About_Me .inner .About_box {
-  float: left;
   margin-right: 100px;
-  width: 600px; 
-  /* outline: 1px dotted red; */
+  outline: 1px dotted red;
 }
 #About_Me .inner .About_box h2 {
   font-weight: bold;
